@@ -11,7 +11,7 @@ class EmailParser
     @emails
   end
 
-  def self.new(emailstring)
+  def initialize(emailstring)
     self.emailstring = emailstring
     self
   end
