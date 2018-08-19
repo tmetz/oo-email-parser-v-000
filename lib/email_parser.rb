@@ -9,6 +9,7 @@ class EmailParser
   def parse
     @emails = self.emailstring.split(/[\s,?]/)
     @emails.delete_if {|element| element.length == 0}
+    @emails = @emails.unique
     @emails
   end
 
